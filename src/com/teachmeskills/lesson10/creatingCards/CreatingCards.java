@@ -13,8 +13,7 @@ public class CreatingCards {
         BaseCard masterCard1 = new BaseCard(321, "1111-2222-3333-4444", 100);
         BaseCard masterCard2 = new BaseCard(531, "1234-2345-3456-4567", 300);
         BaseCard[] baseCard = new BaseCard[]{belCard1, belCard2, visaCard1, visaCard2, masterCard1, masterCard2};
-        Client client = new Client("Bob", baseCard);
-        return client;
+        return new Client("Bob", baseCard);
     }
 
 }
